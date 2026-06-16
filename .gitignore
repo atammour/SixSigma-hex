@@ -1,0 +1,8 @@
+.Rhistory
+.RData
+.Rproj.user/
+.quarto/
+*.html
+
+output/*.png
+output/*.pdf
