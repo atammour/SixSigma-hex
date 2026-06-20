@@ -89,7 +89,7 @@ sticker(
   h_fill = "#21669B",
   h_color = "#FF9800",
   h_size = 2,
-  filename = "/output/SixSigma_hex.png"
+  filename = "output/SixSigma_hex.png"
 )
 
 sticker(
@@ -107,5 +107,5 @@ sticker(
   h_fill = "#21669B",
   h_color = "#FF9800",
   h_size = 2,
-  filename = "/output/SixSigma_hex.svg"
+  filename = "output/SixSigma_hex.svg"
 )
