@@ -91,21 +91,3 @@ sticker(
   h_size = 2,
   filename = "output/SixSigma_hex.png"
 )
-
-sticker(
-  subplot = p,
-  package = "Six Sigma",
-  p_family = "montserrat",
-  p_size = 16,
-  p_fontface = "bold",
-  p_color = "white",
-  p_y = 1.52,
-  s_x = 1,
-  s_y = 0.88,
-  s_width = 1.28,
-  s_height = 1.00,
-  h_fill = "#21669B",
-  h_color = "#FF9800",
-  h_size = 2,
-  filename = "output/SixSigma_hex.svg"
-)
