@@ -4,5 +4,4 @@
 .quarto/
 *.html
 
-output/*.png
 output/*.pdf
