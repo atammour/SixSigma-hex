@@ -28,15 +28,6 @@ p <- ggplot(curve_data, aes(x, y)) +
   ) +
   geom_line(linewidth = 0.8, color = "white") +
 
-  # geom_segment(
-  #   data = spec_segments,
-  #   aes(x = x, xend = x, y = 0.01, yend = 0.36),
-  #   linetype = "dashed",
-  #   linewidth = 0.4,
-  #   color = "#C9EAFF",
-  #   inherit.aes = FALSE
-  # ) +
-
   geom_segment(
     aes(x = 0, xend = 0, y = 0, yend = 0.385),
     linewidth = 0.8,
@@ -44,16 +35,6 @@ p <- ggplot(curve_data, aes(x, y)) +
     alpha = 0.5,
     inherit.aes = FALSE
   ) +
-
-  # geom_text(
-  #   data = spec_segments,
-  #   aes(x = x, y = 0.4, label = label),
-  #   color = "white",
-  #   size = 6,
-  #   fontface = "bold",
-  #   family = "montserrat",
-  #   inherit.aes = FALSE
-  # ) +
 
   annotate(
     "text",
