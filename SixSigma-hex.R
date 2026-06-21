@@ -24,7 +24,7 @@ p <- ggplot(curve_data, aes(x, y)) +
     data = center_fill,
     aes(x, y),
     fill = "#8EC5E8",
-    alpha = 0.1
+    alpha = 0.07
   ) +
   geom_line(linewidth = 0.8, color = "white") +
 
