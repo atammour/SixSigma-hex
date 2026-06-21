@@ -13,11 +13,6 @@ curve_data$y <- dnorm(curve_data$x)
 
 center_fill <- subset(curve_data, x >= -1 & x <= 1)
 
-spec_segments <- data.frame(
-  x = c(-3, 3),
-  label = c("LSL", "USL")
-)
-
 p <- ggplot(curve_data, aes(x, y)) +
   geom_area(fill = "#C9EAFF", alpha = 0.18) +
   geom_area(
@@ -26,7 +21,7 @@ p <- ggplot(curve_data, aes(x, y)) +
     fill = "#8EC5E8",
     alpha = 0.07
   ) +
-  geom_line(linewidth = 0.8, color = "white") +
+  geom_line(linewidth = 0.8, color = "#C9EAFF") +
 
   geom_segment(
     aes(x = 0, xend = 0, y = 0, yend = 0.385),
@@ -70,5 +65,6 @@ sticker(
   h_fill = "#203D4F",
   h_color = "#1B5B82",
   h_size = 2,
-  filename = "output/SixSigma_hex.png"
+  filename = "output/SixSigma_hex.png",
+  dpi = 300
 )
