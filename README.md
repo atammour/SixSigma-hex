@@ -10,7 +10,6 @@ The design features a normal distribution curve with a highlighted central regio
 
 * `SixSigma-hex.R` — source code used to generate the sticker
 * `output/SixSigma_hex.png` — PNG version
-* `output/SixSigma_hex.svg` — SVG version
 
 ## Requirements
 
