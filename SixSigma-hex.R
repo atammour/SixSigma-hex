@@ -19,52 +19,52 @@ spec_segments <- data.frame(
 )
 
 p <- ggplot(curve_data, aes(x, y)) +
-  geom_area(fill = "white", alpha = 0.18) +
+  geom_area(fill = "#C9EAFF", alpha = 0.18) +
   geom_area(
     data = center_fill,
     aes(x, y),
-    fill = "#00BFA5",
-    alpha = 0.55
+    fill = "#8EC5E8",
+    alpha = 0.1
   ) +
-  geom_line(linewidth = 1.0, color = "white") +
+  geom_line(linewidth = 0.8, color = "white") +
+
+  # geom_segment(
+  #   data = spec_segments,
+  #   aes(x = x, xend = x, y = 0.01, yend = 0.36),
+  #   linetype = "dashed",
+  #   linewidth = 0.4,
+  #   color = "#C9EAFF",
+  #   inherit.aes = FALSE
+  # ) +
 
   geom_segment(
-    data = spec_segments,
-    aes(x = x, xend = x, y = 0.01, yend = 0.36),
-    linetype = "dashed",
-    linewidth = 1,
-    color = "red",
+    aes(x = 0, xend = 0, y = 0, yend = 0.385),
+    linewidth = 0.8,
+    color = "#8EC5E8",
+    alpha = 0.5,
     inherit.aes = FALSE
   ) +
 
-  geom_segment(
-    aes(x = 0, xend = 0, y = 0, yend = 0.40),
-    linewidth = 1.2,
-    color = "#00d084a3",
-    alpha = 0.75,
-    inherit.aes = FALSE
-  ) +
-
-  geom_text(
-    data = spec_segments,
-    aes(x = x, y = 0.4, label = label),
-    color = "white",
-    size = 6,
-    fontface = "bold",
-    family = "montserrat",
-    inherit.aes = FALSE
-  ) +
+  # geom_text(
+  #   data = spec_segments,
+  #   aes(x = x, y = 0.4, label = label),
+  #   color = "white",
+  #   size = 6,
+  #   fontface = "bold",
+  #   family = "montserrat",
+  #   inherit.aes = FALSE
+  # ) +
 
   annotate(
     "text",
     x = 0,
     y = -0.045,
-    label = "mu",
-    parse = TRUE,
-    color = "white",
-    size = 10,
-    fontface = "bold",
-    family = "montserrat"
+    label = "\u03bc",
+    parse = FALSE,
+    color = "#8EC5E8",
+    size = 16,
+    fontface = "italic",
+    family = "serif"
   ) +
 
   coord_cartesian(
@@ -76,18 +76,18 @@ p <- ggplot(curve_data, aes(x, y)) +
 
 sticker(
   subplot = p,
-  package = "Six Sigma",
+  package = "SixSigma",
   p_family = "montserrat",
   p_size = 16,
   p_fontface = "bold",
-  p_color = "white",
-  p_y = 1.52,
+  p_color = "#C9EAFF",
+  p_y = 1.49,
   s_x = 1,
   s_y = 0.88,
   s_width = 1.28,
   s_height = 1.00,
-  h_fill = "#21669B",
-  h_color = "#FF9800",
+  h_fill = "#203D4F",
+  h_color = "#1B5B82",
   h_size = 2,
   filename = "output/SixSigma_hex.png"
 )
